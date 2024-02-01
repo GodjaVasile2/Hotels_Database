@@ -111,7 +111,7 @@ BEGIN
         email VARCHAR2(255),
         role_id NUMBER(10),
         salary NUMBER(10, 2) NOT NULL,
-        reports_to NUMBER(10),
+        reports_to NUMBER(10) REFERENCES EMPLOYEES(id),
         FOREIGN KEY (role_id) REFERENCES ROLES(id),
         hotel_id NUMBER,
         FOREIGN KEY (hotel_id) REFERENCES HOTELS(id)
@@ -123,3 +123,6 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('An error occurred: ' || SQLERRM);
 END;
 /
+
+
+
