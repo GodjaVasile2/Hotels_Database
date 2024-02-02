@@ -6,7 +6,7 @@ The Hotels_Database is designed as a learning project to understand and implemen
 
 ## Entity-Relationship Diagram (ERD)
 
-![ERD](https://github.com/GodjaVasile2/Hotels_Database/issues/1#issue-2115523313)
+https://github.com/GodjaVasile2/Hotels_Database/issues/1#issue-2115523313 
 
 The above diagram represents the Entity-Relationship Diagram (ERD) for the Hotels_Database. It illustrates the relationships between the entities in the database schema.
 
