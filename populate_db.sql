@@ -12,10 +12,10 @@ BEGIN
     INSERT INTO COUNTRIES(id, country_name) VALUES (2, 'Ungaria');
     INSERT INTO COUNTRIES(id, country_name) VALUES (3, 'Bulgaria');
 
-    INSERT INTO CITIES(id, city_name, country_id, postal_code) VALUES (1, 'Budapesta', 2, '1011');
-    INSERT INTO CITIES(id, city_name, country_id, postal_code) VALUES (2, 'Debrecen', 2, '4024');
-    INSERT INTO CITIES(id, city_name, country_id, postal_code) VALUES (3, 'Bucuresti', 1, '010011');
-    INSERT INTO CITIES(id, city_name, country_id, postal_code) VALUES (4, 'Cluj-Napoca', 1, '400001');
+    INSERT INTO CITIES(id, city_name, country_id) VALUES (1, 'Budapesta', 2);
+    INSERT INTO CITIES(id, city_name, country_id) VALUES (2, 'Debrecen', 2);
+    INSERT INTO CITIES(id, city_name, country_id) VALUES (3, 'Bucuresti', 1);
+    INSERT INTO CITIES(id, city_name, country_id) VALUES (4, 'Cluj-Napoca', 1);
     INSERT INTO CITIES(id, city_name, country_id) VALUES (5, 'Timisoara', 1);
     INSERT INTO CITIES(id, city_name, country_id) VALUES (6, 'Iasi', 1);
     INSERT INTO CITIES(id, city_name, country_id) VALUES (7, 'Sofia', 3);

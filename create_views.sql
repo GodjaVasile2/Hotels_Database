@@ -1,5 +1,7 @@
--- Outstanding Invoices View: This view could show all invoices that have not yet been paid (where payment_date is NULL).
--- This would be useful for tracking which guests still owe money.
+
+-- Outstanding Invoices View: 
+-- This view shows all invoices that have not yet been paid (where payment_date is NULL).
+-- In this way we are tracking which guests still owe money.
 
 
 CREATE VIEW unpayed_invoices AS
@@ -7,8 +9,8 @@ CREATE VIEW unpayed_invoices AS
     WHERE payment_date IS NULL; 
 
 
--- Guest Reviews View: This view could show all reviews left by guests, along with the guest and hotel information.
--- This would be useful for seeing feedback about each hotel.
+-- Guest Reviews View: 
+-- This view shows all reviews left by guests, along with the guest and hotel information.
 
 
 CREATE VIEW guest_reviews AS 
@@ -23,8 +25,8 @@ CREATE VIEW guest_reviews AS
     JOIN HOTELS h ON r.hotel_id = h.id;
 
 
--- Hotel Revenue View: This view could show the total revenue for each hotel,
--- calculated from the invoice_amount of all paid invoices
+-- Hotel Revenue View
+-- This view shows the total revenue for each hotel, calculated from the invoice_amount of all paid invoices
 
 CREATE VIEW hotel_revenue AS 
    SELECT DISTINCT

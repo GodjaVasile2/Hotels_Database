@@ -7,7 +7,6 @@ BEGIN
     EXECUTE IMMEDIATE 'CREATE TABLE CITIES (
         id NUMBER(4) PRIMARY KEY,
         city_name VARCHAR2(100) NOT NULL,
-        postal_code VARCHAR2(10),
         country_id NUMBER(4),
         FOREIGN KEY (country_id) REFERENCES COUNTRIES(id)
     )'; 
